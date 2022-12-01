@@ -67,7 +67,7 @@ After you're finished please remove all the comments and instructions!
 </details>
 
 <details>
-  <summary>gGithub flow</summary>
+  <summary>Github flow</summary>
   <ul>
     <li><a href="https://expressjs.com/">Express.js</a></li>
   </ul>
