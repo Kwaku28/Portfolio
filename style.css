@@ -96,7 +96,7 @@ p {
 
 .projects {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
   'header'
   'frame';
   padding: 120px 0;
@@ -166,7 +166,7 @@ p {
 
 .button:active {
   background: #e05304;
-  color: #F4F1F0;
+  color: #f4f1f0;
 }
 
 #img {
@@ -384,7 +384,7 @@ p {
 
 .about .button:active {
   background: #e05304;
-  color: #F4F1F0;
+  color: #f4f1f0;
 }
 
 div.tools {
@@ -605,5 +605,5 @@ nav .vector span:nth-child(2) {
 
 #column .button:active {
   background: #e05304;
-  color: #F4F1F0;
+  color: #f4f1f0;
 }
