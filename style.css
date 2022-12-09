@@ -13,7 +13,7 @@ main {
   position: absolute;
   margin: auto;
   width: 375px;
-  height: 5850px;
+  height: 5650px;
   display: flex;
   left: 8px;
   top: 64px;
@@ -344,7 +344,7 @@ p {
 .about {
   position: absolute;
   top: 3950px;
-  height: 1900px;
+  height: 1700px;
   background-image: url('./images/Rectangle73.jpg');
   background-size: contain;
   width: 375px;
@@ -385,62 +385,11 @@ p {
   color: #f4f1f0;
 }
 
-div.tools {
-  text-align: center;
-}
-
-ul {
+.tools {
   position: absolute;
-  top: 110px;
+  top: 810px;
   text-align: center;
-  list-style: none;
-  width: 114px;
-  height: 24px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
-  color: #fff;
-}
-
-.rec {
-  list-style-image: url('./images/Rec.png');
-  width: 164px;
-  height: 24px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff;
-  text-align: left;
-}
-
-.square {
-  list-style-image: url('./images/Square.png');
-  width: 164px;
-  height: 24px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff;
-  text-align: left;
-}
-
-.circle {
-  list-style-image: url('./images/Circle.png');
-  width: 164px;
-  height: 24px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff;
-  text-align: left;
+  width: 375px;
 }
 
 input[type=text] {
@@ -539,15 +488,17 @@ nav .vector span:nth-child(2) {
   grid-template-columns: auto auto auto auto;
   padding: 0;
   gap: 10px;
-  justify-content: space-between;
-  top: 420px;
+  justify-content: space-evenly;
+  list-style: none;
+  top: 430px;
   left: 24px;
+  position: absolute;
 }
 
 .server > li {
   text-align: center;
   border: 1px solid rgb(172, 169, 169);
-  padding: 0 5px;
+  padding: 10px 5px;
   font-size: 15px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -571,13 +522,16 @@ nav .vector span:nth-child(2) {
   gap: 15px;
   justify-content: space-between;
   top: 1160px;
+  position: absolute;
+  top: 1170px;
 }
 
 #column .server > li {
   text-align: center;
-  padding: 0 5px;
+  padding: 10px 5px;
   font-size: 15px;
   border: none;
+  list-style: none;
   background: #f7f4f43d;
   color: #fff;
 }
@@ -604,4 +558,64 @@ nav .vector span:nth-child(2) {
 #column .button:active {
   background: #e05304;
   color: #f4f1f0;
+}
+
+.tools > ul {
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  list-style: none;
+  width: 230px;
+  height: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
+}
+
+.rec {
+  list-style-image: url('./images/Rec.png');
+  width: 164px;
+  height: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  text-align: left;
+  position: absolute;
+  left: 90px;
+}
+
+.square {
+  list-style-image: url('./images/Square.png');
+  width: 164px;
+  height: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  text-align: left;
+  position: absolute;
+  left: 70px;
+}
+
+.circle {
+  list-style-image: url('./images/Circle.png');
+  width: 164px;
+  height: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  text-align: left;
+  position: absolute;
+  left: 115px;
 }
