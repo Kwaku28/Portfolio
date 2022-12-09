@@ -4,21 +4,20 @@
 
 body {
   max-width: 375px;
-  margin: 8px;
+  margin: auto;
   background: #eee;
-  height: auto;
+  height: 100vh;
 }
 
 main {
   position: absolute;
   margin: auto;
   width: 375px;
-  height: 6800px;
+  height: 5850px;
   display: flex;
   left: 8px;
   top: 64px;
   background: #e5e5e5;
-  box-shadow: 30px 0 40px rgba(0, 0, 0, 0.1), -30px 0 40px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -28,6 +27,17 @@ main {
   height: 576px;
   width: 375px;
   margin: auto;
+}
+
+.group {
+  background-image: url('./images/Group.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 406.89px;
+  height: 312.03px;
+  left: 244.5px;
+  top: 307px;
 }
 
 h1 {
@@ -85,42 +95,30 @@ p {
 }
 
 .projects {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-areas: 
+  'header'
+  'frame';
   padding: 120px 0;
   margin: auto;
   width: 375px;
   height: 3455px;
   top: 576px;
   background: #faf8f8;
-}
-
-footer p {
   position: absolute;
-  top: 100px;
-  width: 327px;
-  height: 216px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
-  color: #172b4d;
 }
 
 .header {
+  grid-area: header;
   position: absolute;
-  top: 290px;
+  top: 200px;
   width: 375px;
   height: 568px;
 }
 
 .header h2 {
   position: absolute;
-  top: 240px;
+  top: 230px;
   width: 327px;
   height: 36px;
   font-family: 'Crete Round', sans-serif;
@@ -133,7 +131,7 @@ footer p {
 
 .header p {
   position: absolute;
-  top: 288px;
+  top: 278px;
   width: 327px;
   height: 147px;
   font-family: 'Inter', sans-serif;
@@ -144,7 +142,7 @@ footer p {
   color: #091e42;
 }
 
-#press {
+.button {
   position: absolute;
   top: 500px;
   left: 24px;
@@ -161,18 +159,14 @@ footer p {
   color: #fff;
 }
 
-form #press {
-  position: absolute;
-  top: 280px;
-  bottom: 0;
-  padding: 12px;
-  left: 98px;
-  gap: 5px;
-  width: 131px;
-  height: 48px;
-  background: #ff6b00;
-  border: none;
-  color: #fff;
+.button:hover {
+  background: #fff5e1;
+  color: #f55800;
+}
+
+.button:active {
+  background: #e05304;
+  color: #F4F1F0;
 }
 
 #img {
@@ -185,13 +179,14 @@ form #press {
 }
 
 .frame {
-  position: absolute;
+  grid-area: frame;
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 568px;
+  top: 0;
   left: 0;
   width: 375px;
+  padding-top: 468px;
 }
 
 .about h2 {
@@ -235,7 +230,7 @@ form #press {
 
 #column h2 {
   position: absolute;
-  top: 68px;
+  top: 952px;
   width: 295px;
   height: 81px;
   font-family: 'Crete Round', sans-serif;
@@ -251,7 +246,7 @@ form #press {
 
 #column p {
   position: absolute;
-  top: 170px;
+  top: 1060px;
   width: 295px;
   height: 87px;
   font-family: 'Inter', sans-serif;
@@ -358,7 +353,19 @@ form #press {
   margin: auto;
 }
 
-.about #press {
+.about .illustration {
+  background-image: url('./images/illustration-about-me-mobile.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  position: absolute;
+  width: 159px;
+  height: 258px;
+  left: 216px;
+  top: 420px;
+}
+
+.about .button {
   top: 420px;
   width: 161px;
   height: 48px;
@@ -370,12 +377,14 @@ form #press {
   color: #fff;
 }
 
-footer {
-  position: absolute;
-  display: flex;
-  top: 5905px;
-  height: 844px;
-  width: 375px;
+.about .button:hover {
+  background: #fff5e1;
+  color: #f55800;
+}
+
+.about .button:active {
+  background: #e05304;
+  color: #F4F1F0;
 }
 
 div.tools {
@@ -434,33 +443,6 @@ ul {
   line-height: 44px;
   color: #fff;
   text-align: left;
-}
-
-form {
-  position: absolute;
-  top: 380px;
-  left: 24px;
-  right: 24px;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 10px;
-  color: #979493;
-}
-
-#type {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  color: #3c3a39;
-  border: none;
-  background: #dfdddd;
 }
 
 input[type=text] {
@@ -555,20 +537,19 @@ nav .vector span:nth-child(2) {
 }
 
 .server {
-  position: absolute;
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 0;
-  gap: 15px;
-  justify-content: space-evenly;
-  top: 447px;
+  gap: 10px;
+  justify-content: space-between;
+  top: 420px;
   left: 24px;
 }
 
-.server > div {
+.server > li {
   text-align: center;
   border: 1px solid rgb(172, 169, 169);
-  padding: 8px 5px;
+  padding: 0 5px;
   font-size: 15px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -581,32 +562,31 @@ nav .vector span:nth-child(2) {
   width: 327px;
   height: 0;
   left: 24px;
-  top: 670px;
+  top: 685px;
   border: 1px solid #aaa;
 }
 
 #column .server {
-  position: absolute;
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding-left: 24px;
   gap: 15px;
-  justify-content: space-evenly;
-  top: 290px;
+  justify-content: space-between;
+  top: 1160px;
 }
 
-#column .server > div {
+#column .server > li {
   text-align: center;
-  padding: 8px 5px;
+  padding: 0 5px;
   font-size: 15px;
   border: none;
   background: #f7f4f43d;
   color: #fff;
 }
 
-#column #press {
+#column .button {
   position: absolute;
-  top: 350px;
+  top: 1232px;
   bottom: 0;
   left: 24px;
   padding: 12px;
@@ -618,16 +598,12 @@ nav .vector span:nth-child(2) {
   color: #fff;
 }
 
-footer .social a {
-  position: relative;
-  top: 890px;
-  width: 25px;
-  height: 25px;
-  left: 110px;
-  padding-left: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  color: rgb(145, 143, 143);
+#column .button:hover {
+  background: #fff5e1;
+  color: #f55800;
+}
+
+#column .button:active {
+  background: #e05304;
+  color: #F4F1F0;
 }
