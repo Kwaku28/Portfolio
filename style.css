@@ -96,9 +96,7 @@ p {
 
 .projects {
   display: grid;
-  grid-template-areas:
-  'header'
-  'frame';
+  grid-template-areas: 'header' 'frame';
   padding: 120px 0;
   margin: auto;
   width: 375px;
