@@ -282,17 +282,17 @@ form {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 25px;
   line-height: 10px;
   color: #979493;
 }
 
 #fname {
-  padding-bottom: 15px;
+  padding: 10px;
 }
 
 #email {
-  padding-bottom: 15px;
+  padding: 10px;
 }
 
 #type {
@@ -304,6 +304,7 @@ form {
   color: #3c3a39;
   border: none;
   background: #dfdddd;
+  padding: 10px;
 }
 
 footer .social a {
@@ -322,7 +323,7 @@ footer .social a {
 
 form #press {
   position: absolute;
-  top: 280px;
+  top: 290px;
   bottom: 0;
   padding: 12px;
   left: 98px;
